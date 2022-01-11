@@ -1,0 +1,100 @@
+@import "../../../scss/index.scss";
+
+.login-form {
+    margin-top: 50px;
+
+    h2 {
+        color: $font-light;
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .ui.form {
+        .field {
+            .input {
+                margin-bottom: 5px;
+                input {
+                    background-color: $background-grey;
+                    border: 0;
+                    font-size: 1rem;
+                    color: $font-light;
+                    &:hover, &:active, &:focus {
+                        background-color: $background-grey-hover;
+                        border: 0;
+                    }
+                }
+                i {
+                    color: $font-light;
+                    font-size: 1.25rem;
+                }
+                &.error {
+                    input {
+                        border-bottom: 1px solid $danger;
+                    }
+                }
+            }
+        }
+
+        .button {
+            width: 100%;
+            background-color: $primary-color;
+            color: $font-light;
+            text-transform: uppercase;
+            margin-top: 10px;
+            padding: 1rem 0;
+            border-radius: 50px;
+            font-size: 14px;
+            letter-spacing: 3px;
+        }
+
+        .error-text {
+            color: $font-light;
+            padding-left: 1rem;
+        }
+    }
+
+    .resend-verification-email {
+        color: $font-light;
+        padding: 20px 20px 0 20px;
+        text-align: center;
+
+        span {
+            color: $primary-color;
+            font-weight: bold;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &__options {
+        margin-top: 3rem;
+        color: $font-light;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        p {
+            &:first-of-type {
+                margin-bottom: 2.5rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            &:last-of-type {
+                color: $font-grey;
+                span {
+                    color: $font-light;
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    &:hover {
+                        cursor: pointer;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
